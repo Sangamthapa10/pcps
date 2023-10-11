@@ -1,65 +1,73 @@
 <html>
   <head>
-    <link ref="stylesheet" href="index.css" />
+
     <title>Pcps</title>
-    <style>
-      .nav_bar {
-        display: grid;
-        grid-template-columns: 30% auto;
-      }
-      .titles_ {
-        display: grid;
-        grid-auto-flow: column;
-      }
-      .slide_img {
-        width: 100vw;
-        height: 70vh;
-      }
-      .btn {
-        background-color: #0d5ef4;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1;
-        padding: 20.5px 29px;
-        box-shadow: 0px 6px 16px rgba(13, 94, 244, 0.24);
-        border-radius: 5px;
-        color: white;
-        border: none;
-      }
-      .container_info {
-        display: grid;
-        grid-gap: 9px;
-        place-items: center;
-        padding-top: 56px;
-      }
-    </style>
+    
   </head>
   <body>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- navbar -->
     <div class="nav_bar">
       <image src="./image/icon.png" />
       <div class="titles_">
         <div class="nav_title_container">
-          <h2 class="nav_title">Home</h2>
+          <h2 class="nav_title">Home
+            <i class="fa fa-caret-down"></i>
+
+          </h2>
+          <div class="dropdown_content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+          </div>
         </div>
         <div class="nav_title_container dropdown">
-          <h2 class="nav_title">About us</h2>
+          <h2 class="nav_title">About us
+          <i class="fa fa-caret-down"></i></h2>
+
         </div>
         <div class="nav_title_container dropdown">
-          <h2 class="nav_title">About us</h2>
+          <h2 class="nav_title">Courses
+          <i class="fa fa-caret-down"></i>
+        </h2>
         </div>
         <div class="nav_title_container dropdown">
-          <h2 class="nav_title">About us</h2>
+          <h2 class="nav_title">Adminsion
+            <i class="fa fa-caret-down"></i>
+          </h2>
+
         </div>
         <div class="nav_title_container dropdown">
-          <h2 class="nav_title">About us</h2>
+          <h2 class="nav_title">Students
+          <i class="fa fa-caret-down"></i>
+        </h2>
         </div>
       </div>
     </div>
     <!-- body -->
     <!-- hero image -->
-    <div>
+    <div class="slideshow_container">
       <img class="slide_img" src="image/pcps_slider_3.png" />
+      <img class="slide_img" src="image/pcps_slider_4.png" />
+
+
+     
+<div class="overlay">
+  <h2 style="color:aliceblue;font-size: 45px;">Study in your own country</h2>
+  <h1 style="color:aliceblue">Join Us Today</h1>
+  <h2 style="color:aliceblue">Ensure Your Sear before its taken and bla bla</h2>
+ <div style="display: flex;">
+
+   <button style="background-color: #ed1c24;border-radius: 10px;" class="btn">
+     See Course
+   </button>
+   <button style="margin-left:30px;background-color:  #8f1ced;border-radius: 10px" class="btn">
+   Apply Now
+   </button>
+ </div> 
+</div>
     </div>
     <div style="padding-top: 20px">
       <div
@@ -86,9 +94,9 @@
       </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 30px">
-      <div class="container_info">
-        <img src="image/slideimg.jpg" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 30px ;padding: 0 15px;">
+      <div style="background-color: aliceblue;" class="container_info">
+        <img src="image/vector_1-6-1.png" />
         <div style="display: grid; place-content: center; place-items: center">
           <h3 style="color: #0d5ef4">
             Want To Learn Something New About Computing?
@@ -104,23 +112,43 @@
         </div>
       </div>
 
-      <div class="container_info">
-        <img src="image/slideimg.jpg" />
+      <div style="background-color: #f1eae7" class="container_info">
+        <img src="image/vector_2-6-1.png" />
         <div style="display: grid; place-content: center; place-items: center">
           <h3 style="color: #0d5ef4">
             Want To Learn Something New About Buisness?
           </h3>
           <p>
-            The discplines of Computer Science and Software Engineering are the
-            central to many of today's industrial activities as well as
-            providing a diverse and rapidly developing field for personal
-            studies.
+            This course provides students who want to develop their management and business planning knowledge with an advanced practical business knowledge.
           </p>
           <button style="background-color: #ed1c24" class="btn">
-            View Computing Course
+            View Buisness Course
           </button>
         </div>
       </div>
     </div>
+
+
+
+
+    <!-- another hero image -->
+
+
+    <div style="position: relative;display: grid;width: 100%;">
+    
+    <img src="image/cta_bg-scaled.jpg"  style="width:100%;height:25vh;object-fit:cover"/>
+    <div style="position: absolute;top:20;display:grid; place-items: center;width: 100%;">
+    
+    <h1 style="color:aliceblue">Get Upto 100% Scholarship*
+
+    </h1>
+    <p style="color:aliceblue">Students Are You Ready?
+    </p>
+    <button class="btn">Join Today</button>
+  </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="Js/index.js"></script>
+
   </body>
 </html>
