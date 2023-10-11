@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <link ref="stylesheet" href="index.css" />
+    <title>Pcps</title>
+    <style>
+      .nav_bar {
+        display: grid;
+        grid-template-columns: 30% auto;
+      }
+      .titles_ {
+        display: grid;
+        grid-auto-flow: column;
+      }
+      .slide_img {
+        width: 100vw;
+        height: 70vh;
+      }
+      .btn {
+        background-color: #0d5ef4;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        padding: 20.5px 29px;
+        box-shadow: 0px 6px 16px rgba(13, 94, 244, 0.24);
+        border-radius: 5px;
+        color: white;
+        border: none;
+      }
+      .container_info {
+        display: grid;
+        grid-gap: 9px;
+        place-items: center;
+        padding-top: 56px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav_bar">
+      <image src="./image/icon.png" />
+      <div class="titles_">
+        <div class="nav_title_container">
+          <h2 class="nav_title">Home</h2>
+        </div>
+        <div class="nav_title_container dropdown">
+          <h2 class="nav_title">About us</h2>
+        </div>
+        <div class="nav_title_container dropdown">
+          <h2 class="nav_title">About us</h2>
+        </div>
+        <div class="nav_title_container dropdown">
+          <h2 class="nav_title">About us</h2>
+        </div>
+        <div class="nav_title_container dropdown">
+          <h2 class="nav_title">About us</h2>
+        </div>
+      </div>
+    </div>
+    <!-- body -->
+    <!-- hero image -->
+    <div>
+      <img class="slide_img" src="image/pcps_slider_3.png" />
+    </div>
+    <div style="padding-top: 20px">
+      <div
+        style="
+          display: grid;
+          justify-content: center;
+          align-self: center;
+          justify-items: center;
+          width: 70vw;
+          margin: auto;
+        "
+      >
+        <div
+          style="display: grid; justify-content: center; justify-items: center"
+        >
+          <h2 style="color: #0d5ef4; margin: auto">Students</h2>
+          <h3 style="font-size: 36px">What are you looking for ?</h3>
+          <p style="color: #4d5765; font: poppins">
+            Be the part of the PCPS Family and give a healthy speed to your
+            future. Enroll for Bachelor's in Computer Science and Software
+            Engineering and Bachelor's in Business Administration.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 30px">
+      <div class="container_info">
+        <img src="image/slideimg.jpg" />
+        <div style="display: grid; place-content: center; place-items: center">
+          <h3 style="color: #0d5ef4">
+            Want To Learn Something New About Computing?
+          </h3>
+          <p>
+            The discplines of Computer Science and Software Engineering are the
+            central to many of today's industrial activities as well as
+            providing a diverse and rapidly developing field for personal
+            studies.
+          </p>
+
+          <button class="btn">View Computing Course</button>
+        </div>
+      </div>
+
+      <div class="container_info">
+        <img src="image/slideimg.jpg" />
+        <div style="display: grid; place-content: center; place-items: center">
+          <h3 style="color: #0d5ef4">
+            Want To Learn Something New About Buisness?
+          </h3>
+          <p>
+            The discplines of Computer Science and Software Engineering are the
+            central to many of today's industrial activities as well as
+            providing a diverse and rapidly developing field for personal
+            studies.
+          </p>
+          <button style="background-color: #ed1c24" class="btn">
+            View Computing Course
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
